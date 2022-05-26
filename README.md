@@ -1,1 +1,1 @@
-# simulateurcircuit
+# electrical circuit simulator
