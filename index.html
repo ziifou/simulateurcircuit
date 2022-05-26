@@ -1,0 +1,68 @@
+<html>
+<head>.
+    <title>
+        circuit
+    </title>
+    <link href="style.css" rel="Stylesheet" type="text/css" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- src = https://www.w3schools.com/bootstrap/bootstrap_get_started.asp -->
+    <!-- un bon video qui explique le svg  
+    https://www.youtube.com/watch?v=emFMHH2Bfvo -->
+
+    
+</head>
+
+<body id="body">
+    <svg height="100%" width="100%" id="svgPrincipale" viewbox="0 0 700 700"/>
+
+    <script src="and.js"></script>
+    <script src="epingles.js"></script>
+    <script src="arcs.js"></script>
+    <script src="bouton.js"></script>
+    <script src="lampe.js"></script>
+    <script src="or.js"></script>
+    <script src="not.js"></script>
+    <script src="main.js"></script> 
+
+
+    <div class="modal fade" id="modal-principal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ajouter des composants</h5>
+                </div>
+                <div class="modal-body">
+                <b>Not</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantité: <input id="times0" type="text" value="0">
+                <br>        
+                <b>Or</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Quantité: <input id="times1" type="text" value="0">
+                <br>  
+                <b>And</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Quantité: <input id="times2" type="text" value="0">
+                <br>  
+                <b>Lamp</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Quantité: <input id="times3" type="text" value="0">
+                <br>  
+                <b>Boutton</b>&nbsp;&nbsp;
+                Quantité: <input id="times4" type="text" value="0">
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" onmousedown='$("#modal-principal").modal("hide"); ajouter();' class="btn btn-primary" id="done">
+						Ajouter
+					</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

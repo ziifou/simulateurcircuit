@@ -1,0 +1,19 @@
+/* paramètre général */
+body {
+    background-color:white;
+    margin: 0;
+    padding: 0;
+}
+
+/* pour les img de not, and , or */
+img {
+    border-radius: 17px;
+    height: 64;
+    width: 64;
+}
+
+/* pour un beau rectangle */
+#boutont {
+    rx: 5;
+    ry: 5;
+}
